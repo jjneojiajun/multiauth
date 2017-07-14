@@ -126,13 +126,13 @@ return [
 
         'admins' => [
             'provider' => 'admins',
-            'table' => 'password_resets',
+            'table' => 'admin_password_resets',
             'expire' => 15,
         ],
 
         'tutors' => [
             'provider' => 'tutors',
-            'table' => 'password_resets',
+            'table' => 'tutor_password_resets',
             'expire' => 60,
         ]
     ],
