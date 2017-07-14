@@ -5,9 +5,11 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class Tutor extends Authenticatable
 {
     use Notifiable;
+
+    protected $guard = 'tutor';
 
     /**
      * The attributes that are mass assignable.

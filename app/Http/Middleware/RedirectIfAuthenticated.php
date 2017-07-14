@@ -28,6 +28,13 @@ class RedirectIfAuthenticated
                 #code ..
                 break;
 
+            case 'tutor':
+
+                if(Auth::guard($guard)->check()){
+                    return redirect()->route('tutor.dashboard');
+                }
+                break;
+
             default:
 
                 #code ....
