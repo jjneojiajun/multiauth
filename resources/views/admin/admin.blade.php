@@ -1,19 +1,8 @@
-@extends('layouts.app')
+@extends('layouts.admin')
+
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Admin Dashboard</div>
 
-                    <div class="panel-body">
-                        @component('components.who')
+    <h1>Admin Dashboard</h1>
 
-                        @endcomponent
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 @endsection
